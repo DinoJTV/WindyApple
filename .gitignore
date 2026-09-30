@@ -1,0 +1,58 @@
+# Public product repository: keep paid software outside this checkout.
+# Gitignore is an accidental-add safeguard, not access control.
+# It does not remove previously tracked files or block release attachments.
+
+# Windows executables, installers, libraries, and symbols (case-insensitive)
+*.[eE][xX][eE]
+*.[mM][sS][iI]
+*.[mM][sS][iI][xX]
+*.[mM][sS][iI][xX][bB][uU][nN][dD][lL][eE]
+*.[aA][pP][pP][xX]
+*.[aA][pP][pP][xX][bB][uU][nN][dD][lL][eE]
+*.[dD][lL][lL]
+*.[pP][dD][bB]
+*.[cC][aA][bB]
+
+# Archives and disk images may contain paid software
+*.[zZ][iI][pP]
+*.[7][zZ]
+*.[rR][aA][rR]
+*.[tT][aA][rR]
+*.[gG][zZ]
+*.[iI][sS][oO]
+
+# Private build outputs and working material
+[Bb]in/
+[Oo]bj/
+[Bb]uild/
+[Dd]ist/
+[Rr]elease/
+[Rr]eleases/
+[Pp]rivate/
+[Pp]aid/
+[Aa]rtifacts/
+work/
+
+# Credentials, signing material, and local configuration
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+*.keystore
+secrets/
+credentials/
+*.log
+*.dmp
+
+# Editor and operating-system files
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.swp
